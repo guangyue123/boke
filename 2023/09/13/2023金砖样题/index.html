@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>2023金砖样题 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A模块题目：OpenStack 平台部署与运维业务场景：  某企业拟使用OpenStack搭建一个企业云平台，用于部署各类企业应用对外对内服务。云平台可实现I T资源池化、弹性分配、集中管理、性能优化以及统一安全认证等。系统结构如下图： 企业云平台的搭建使用竞赛平台提供的两台云服务器，配置如下表：    设备名称 主机名 接口 IP地址    云服务器1 controller eth0 公网IP:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2023金砖样题">
+<meta property="og:url" content="http://example.com/2023/09/13/2023%E9%87%91%E7%A0%96%E6%A0%B7%E9%A2%98/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="A模块题目：OpenStack 平台部署与运维业务场景：  某企业拟使用OpenStack搭建一个企业云平台，用于部署各类企业应用对外对内服务。云平台可实现I T资源池化、弹性分配、集中管理、性能优化以及统一安全认证等。系统结构如下图： 企业云平台的搭建使用竞赛平台提供的两台云服务器，配置如下表：    设备名称 主机名 接口 IP地址    云服务器1 controller eth0 公网IP:">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-09-13T11:52:28.000Z">
+<meta property="article:modified_time" content="2024-03-25T00:47:35.274Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="样题">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2023金砖样题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/13/2023%E9%87%91%E7%A0%96%E6%A0%B7%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2023-09-13T11:52:28.000Z" itemprop="datePublished">2023-09-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      2023金砖样题
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="A模块题目：OpenStack-平台部署与运维"><a href="#A模块题目：OpenStack-平台部署与运维" class="headerlink" title="A模块题目：OpenStack 平台部署与运维"></a>A模块题目：OpenStack 平台部署与运维</h1><p>业务场景： </p>
+<p>某企业拟使用OpenStack搭建一个企业云平台，用于部署各类企业应用对外对内服务。云平台可实现I</p>
+<p>T资源池化、弹性分配、集中管理、性能优化以及统一安全认证等。系统结构如下图：</p>
+<p>企业云平台的搭建使用竞赛平台提供的两台云服务器，配置如下表：</p>
+<table>
+<thead>
+<tr>
+<th>设备名称</th>
+<th>主机名</th>
+<th>接口</th>
+<th>IP地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>云服务器1</td>
+<td>controller</td>
+<td>eth0</td>
+<td>公网IP:******** 私网IP:192.168.100.*&#x2F;24</td>
+</tr>
+<tr>
+<td>eth1</td>
+<td>私网IP:192.168.200.  *&#x2F;24</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>云服务器2</td>
+<td>compute</td>
+<td>eth0</td>
+<td>公网IP:******** 私网IP:192.168.100. *&#x2F;24</td>
+</tr>
+<tr>
+<td>eth1</td>
+<td>私网IP:192.168.200.  *&#x2F;24</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>说明： </p>
+<p>1.选手自行检查工位pc机硬件及网络是否正常； </p>
+<p>2.竞赛使用集群模式进行，给每个参赛队提供华为云账号和密码及考试系统的账号和密码。选手通过用户名与密码分别登录华为云和考试系统；</p>
+<p>3.竞赛用到的软件包都在云主机&#x2F;root下。 </p>
+<p>4.表1中的公网IP和私网IP以自己云主机显示为准，每个人的公网IP和私网IP不同。使用第三方软件远程连接云主机，使用公网IP连接。 </p>
+<p>​    </p>
+<p>任务 <strong>1</strong> 私有云平台环境初始化（<strong>5</strong> 分） </p>
+<h1 id="1-配置主机名"><a href="#1-配置主机名" class="headerlink" title="1. 配置主机名"></a>1. 配置主机名</h1><p>  把controller节点主机名设置为controller, compute节点主机名设置为compute，修改 hosts文件将IP地址映射为主机名。  在controller节点将cat &#x2F;etc&#x2F;hosts命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/hosts</span><br><span class="line">```</span><br><span class="line">&lt;controller ip&gt; controller</span><br><span class="line">&lt;compute ip&gt; compute</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-挂载光盘镜像"><a href="#2-挂载光盘镜像" class="headerlink" title="2. 挂载光盘镜像"></a>2. 挂载光盘镜像</h1><p>在controller节点的root目录下有CentOS-7-x86_64-DVD-2009.iso和openstack-train.tar.gz，在&#x2F;opt下创建centos目录，将镜像文件CentOS-7-x86_64-DVD-2009.iso挂载到&#x2F; opt&#x2F;centos下，将openstack-train.tar.gz解压到&#x2F;opt目录下，并创建本地yum源local.repo。 </p>
+<p>在controller节点将yum list | grep glance命令的返回结果提交到答题框。【1分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"># 在/opt下创建centos目录</span><br><span class="line">mkdir /opt/centos</span><br><span class="line"># 将镜像文件临时挂载到/mnt目录下</span><br><span class="line">mount -o loop CentOS-7-x86_64-DVD-2009.iso /mnt</span><br><span class="line"># 复制/mnt目录下的文件到/opt/centos</span><br><span class="line">cp -rfv /mnt/* /opt/centos</span><br><span class="line"># 取消挂载CentOS-7-x86_64-DVD-2009.iso</span><br><span class="line">umount /mnt</span><br><span class="line"># 将openstack-train.tar.gz解压到/opt目录下</span><br><span class="line">tar -zxvf openstack-train.tar.gz -C /opt</span><br><span class="line"># 创建本地yum源local.repo</span><br><span class="line">vi /etc/yum.repos.d/local.repo</span><br><span class="line">```</span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=file:///opt/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">[iaas]</span><br><span class="line">name=iaas</span><br><span class="line">baseurl=file:///opt/iaas/iaas-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="3-搭建ftp服务器"><a href="#3-搭建ftp服务器" class="headerlink" title="3. 搭建ftp服务器"></a>3. 搭建ftp服务器</h1><p>在controller节点上安装vsftp服务,将&#x2F;opt目录设为共享，并设置为开机自启动，然</p>
+<p>后重启服务生效；在compute节点创建FTP源ftp.repo，使用controller节点为FTP服务器，配置文件中的FTP地址使用主机名。 </p>
+<p>在compute节点将cat &#x2F;etc&#x2F;yum.repos.d&#x2F;ftp.repo命令的返回结果提交到答题框。【1</p>
+<p>分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 在controller节点上安装vsftp服务</span><br><span class="line">yum insatll -y vsftpd</span><br><span class="line"># 将/opt目录设为共享</span><br><span class="line">vi /etc/vsftpd/vsftpd.conf</span><br><span class="line">```</span><br><span class="line">anon_root=/opt</span><br><span class="line">```</span><br><span class="line"># 设置为开机自启动，然后重启服务生效</span><br><span class="line">systemctl enable vsftpd &amp;&amp; systemctl restart vsftpd</span><br><span class="line"># 在compute节点创建FTP源ftp.repo，使用controller节点为FTP服务器，配置文件中的FTP地址使用主机名。 </span><br><span class="line">vi /etc/yum.repos.d/ftp.repo</span><br><span class="line">```</span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=ftp://controller/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">[iaas]</span><br><span class="line">name=iaas</span><br><span class="line">baseurl=ftp://controller/iaas/iaas-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="4-分区"><a href="#4-分区" class="headerlink" title="4. 分区"></a>4. 分区</h1><p>在compute节点将sdb分为两个区分别为sdb1和sdb2,大小自定义。要求分区格式为gp</p>
+<p>t,使用mkfs.xfs命令对文件系统格式化。将lsblk -f命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">gdisk /dev/sdb</span><br><span class="line">mkfs.xfs /dev/sdb1</span><br><span class="line">mkfs.xfs /dev/sdb2</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5-系统调优-脏数据回写"><a href="#5-系统调优-脏数据回写" class="headerlink" title="5. 系统调优-脏数据回写"></a>5. 系统调优-脏数据回写</h1><p>Linux系统内存中会存在脏数据，一般系统默认脏数据占用内存30%时会回写磁盘，修改系统配置文件，要求将回写磁盘的大小调整为60%。 </p>
+<p>在controller节点将sysctl -p命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">要将 Linux 系统默认脏数据回写磁盘的阈值从 30% 调整为 60%，你需要修改系统的参数配置文件。在大多数 Linux 发行版中，这个配置文件是 “/etc/sysctl.conf”。</span><br><span class="line"></span><br><span class="line">下面是一般的修改步骤：</span><br><span class="line"></span><br><span class="line">打开终端或命令行窗口，以管理员权限登录系统。</span><br><span class="line">执行以下命令以编辑 “/etc/sysctl.conf” 配置文件：</span><br><span class="line">sudo nano /etc/sysctl.conf</span><br><span class="line">如果你喜欢其他编辑器，也可以将 “nano” 替换为你喜欢的编辑器的命令。</span><br><span class="line"></span><br><span class="line">在配置文件中，找到或添加以下行：</span><br><span class="line">vm.dirty_ratio = 60</span><br><span class="line">这将设置脏数据回写磁盘的阈值为 60%。</span><br><span class="line"></span><br><span class="line">保存文件并退出编辑器。</span><br><span class="line"></span><br><span class="line">执行以下命令以使系统加载新的配置：</span><br><span class="line"></span><br><span class="line">sudo sysctl -p</span><br><span class="line">这将重新加载系统配置文件，并应用新的脏数据回写磁盘的阈值。</span><br><span class="line"></span><br><span class="line">现在，系统的脏数据回写磁盘的阈值应该已经调整为 60%。请注意，这是一个全局的系统参数设置，可能会影响整个系统中的所有进程。确保在进行这样的修改之前对系统做好适当的备份，并了解修改明确的后果和风险。</span><br></pre></td></tr></table></figure>
+
+
+
+<p>任务 <strong>2 OpenStack</strong> 搭建任务（<strong>10</strong> 分） </p>
+<h1 id="1-修改脚本文件"><a href="#1-修改脚本文件" class="headerlink" title="1. 修改脚本文件"></a>1. 修改脚本文件</h1><p>在controller节点和compute节点分别安装sh-guoji软件包，修改脚本文件基本变量（脚本文件为&#x2F;root&#x2F;variable.sh），修改完成后使用命令生效该脚本文件并替换到compute节点对应位置。</p>
+<p>在controller节点请将命令的返回结果提交到答题n框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br></pre></td><td class="code"><pre><span class="line">vi /root/variable.sh</span><br><span class="line">```</span><br><span class="line">#--------------------system Config--------------------##</span><br><span class="line">#Controller Server Manager IP. example:x.x.x.x</span><br><span class="line">HOST_IP=&lt;controller ip&gt;</span><br><span class="line"></span><br><span class="line">#Controller HOST Password. example:000000 </span><br><span class="line">HOST_PASS=000000</span><br><span class="line"></span><br><span class="line">#Controller Server hostname. example:controller</span><br><span class="line">HOST_NAME=controller</span><br><span class="line"></span><br><span class="line">#Compute Node Manager IP. example:x.x.x.x</span><br><span class="line">HOST_IP_NODE=&lt;compute ip&gt;</span><br><span class="line"></span><br><span class="line">#Compute HOST Password. example:000000 </span><br><span class="line">HOST_PASS_NODE=000000</span><br><span class="line"></span><br><span class="line">#Compute Node hostname. example:compute</span><br><span class="line">HOST_NAME_NODE=compute</span><br><span class="line"></span><br><span class="line">#--------------------Chrony Config-------------------##</span><br><span class="line">#Controller network segment IP.  example:x.x.0.0/16(x.x.x.0/24)</span><br><span class="line">network_segment_IP=&lt;x.x.0.0/16&gt;</span><br><span class="line"></span><br><span class="line">#--------------------Rabbit Config ------------------##</span><br><span class="line">#user for rabbit. example:openstack</span><br><span class="line">RABBIT_USER=openstack</span><br><span class="line"></span><br><span class="line">#Password for rabbit user .example:000000</span><br><span class="line">RABBIT_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------MySQL Config---------------------##</span><br><span class="line">#Password for MySQL root user . exmaple:000000</span><br><span class="line">DB_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Keystone Config------------------##</span><br><span class="line">#Password for Keystore admin user. exmaple:000000</span><br><span class="line">DOMAIN_NAME=demo</span><br><span class="line">ADMIN_PASS=000000</span><br><span class="line">DEMO_PASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Mysql keystore user. exmaple:000000</span><br><span class="line">KEYSTONE_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Glance Config--------------------##</span><br><span class="line">#Password for Mysql glance user. exmaple:000000</span><br><span class="line">GLANCE_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore glance user. exmaple:000000</span><br><span class="line">GLANCE_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Nova Config----------------------##</span><br><span class="line">#Password for Mysql nova user. exmaple:000000</span><br><span class="line">NOVA_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore nova user. exmaple:000000</span><br><span class="line">NOVA_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Neturon Config-------------------##</span><br><span class="line">#Password for Mysql neutron user. exmaple:000000</span><br><span class="line">NEUTRON_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore neutron user. exmaple:000000</span><br><span class="line">NEUTRON_PASS=000000</span><br><span class="line"></span><br><span class="line">#metadata secret for neutron. exmaple:000000</span><br><span class="line">METADATA_SECRET=000000</span><br><span class="line"></span><br><span class="line">#Tunnel Network Interface. example:x.x.x.x</span><br><span class="line">INTERFACE_IP=&lt;localhost ip&gt;</span><br><span class="line"></span><br><span class="line">#External Network Interface. example:eth1</span><br><span class="line">INTERFACE_NAME=eth1</span><br><span class="line"></span><br><span class="line">#External Network The Physical Adapter. example:provider</span><br><span class="line">Physical_NAME=provider</span><br><span class="line"></span><br><span class="line">#First Vlan ID in VLAN RANGE for VLAN Network. exmaple:101</span><br><span class="line">minvlan=1</span><br><span class="line"></span><br><span class="line">#Last Vlan ID in VLAN RANGE for VLAN Network. example:200</span><br><span class="line">maxvlan=4000</span><br><span class="line"></span><br><span class="line">#--------------------Cinder Config--------------------##</span><br><span class="line">#Password for Mysql cinder user. exmaple:000000</span><br><span class="line">CINDER_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore cinder user. exmaple:000000</span><br><span class="line">CINDER_PASS=000000</span><br><span class="line"></span><br><span class="line">#Cinder Block Disk. example:md126p3</span><br><span class="line">BLOCK_DISK=sdb1</span><br><span class="line"></span><br><span class="line">#--------------------Swift Config---------------------##</span><br><span class="line">#Password for Keystore swift user. exmaple:000000</span><br><span class="line">SWIFT_PASS=000000</span><br><span class="line"></span><br><span class="line">#The NODE Object Disk for Swift. example:md126p4.</span><br><span class="line">OBJECT_DISK=sdb2</span><br><span class="line"></span><br><span class="line">#The NODE IP for Swift Storage Network. example:x.x.x.x.</span><br><span class="line">STORAGE_LOCAL_NET_IP=&lt;compute ip&gt;</span><br><span class="line"></span><br><span class="line">#--------------------Heat Config----------------------##</span><br><span class="line">#Password for Mysql heat user. exmaple:000000</span><br><span class="line">HEAT_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore heat user. exmaple:000000</span><br><span class="line">HEAT_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Zun Config-----------------------##</span><br><span class="line">#Password for Mysql Zun user. exmaple:000000</span><br><span class="line">ZUN_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore Zun user. exmaple:000000</span><br><span class="line">ZUN_PASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Mysql Kuryr user. exmaple:000000</span><br><span class="line">KURYR_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore Kuryr user. exmaple:000000</span><br><span class="line">KURYR_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Ceilometer Config----------------##</span><br><span class="line">#Password for Gnocchi ceilometer user. exmaple:000000</span><br><span class="line">CEILOMETER_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore ceilometer user. exmaple:000000</span><br><span class="line">CEILOMETER_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------AODH Config----------------##</span><br><span class="line">#Password for Mysql AODH user. exmaple:000000</span><br><span class="line">AODH_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore AODH user. exmaple:000000</span><br><span class="line">AODH_PASS=000000</span><br><span class="line"></span><br><span class="line">#--------------------Barbican Config----------------##</span><br><span class="line">#Password for Mysql Barbican user. exmaple:000000</span><br><span class="line">BARBICAN_DBPASS=000000</span><br><span class="line"></span><br><span class="line">#Password for Keystore Barbican user. exmaple:000000</span><br><span class="line">BARBICAN_PASS=000000</span><br><span class="line"></span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h1 id="2-安装openstack基础组件"><a href="#2-安装openstack基础组件" class="headerlink" title="2. 安装openstack基础组件"></a>2. 安装openstack基础组件</h1><p>分别在controller节点和compute节点执行openstack-completion.sh文件(执行完闭需重连终端)。在controller节点将openstack –version命令的返回结果提交到答题框。【1分】</p>
+<h1 id="3-搭建数据库组件"><a href="#3-搭建数据库组件" class="headerlink" title="3. 搭建数据库组件"></a>3. 搭建数据库组件</h1><p>在controller节点执行openstack-controller-mysql.sh脚本，会自行安装mariadb、m</p>
+<p>emcached、rabbitmq等服务和完成相关配置。执行完成后修改配置文件将缓存CACHESIZE修改为128,并重启相应服务。 </p>
+<p>将ps aux|grep memcached命令的返回结果提交到答题框。【1分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/sysconfig/memcached</span><br><span class="line">```</span><br><span class="line">CACHESIZE=&quot;128&quot;</span><br><span class="line">```</span><br><span class="line"># 重启memcached服务</span><br><span class="line">systemctl restart memcached</span><br></pre></td></tr></table></figure>
+
+<h1 id="4-搭建认证服务组件"><a href="#4-搭建认证服务组件" class="headerlink" title="4. 搭建认证服务组件"></a>4. 搭建认证服务组件</h1><p>在controller节点执行openstack-controller-keystone.sh脚本，会自行安装keystone服务和完成相关配置。使用openstack命令，创建一个名为tom的账户，密码为tompasswo rd123,邮箱为<a href="mailto:&#116;&#111;&#109;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;">&#116;&#111;&#109;&#64;&#101;&#x78;&#x61;&#109;&#112;&#x6c;&#x65;&#x2e;&#99;&#x6f;&#x6d;</a>。 </p>
+<p>将openstack user show tom命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openstack user create --domain demo --password tompassword123 --email tom@example.com tom</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5-搭建镜像服务组件"><a href="#5-搭建镜像服务组件" class="headerlink" title="5. 搭建镜像服务组件"></a>5. 搭建镜像服务组件</h1><p>在controller节点执行openstack-controller-glance.sh脚本，会自行安装glance服</p>
+<p>务和完成相关配置。完成后使用openstack命令,创建一个qcow2格式，名为cirros_0.3.4 的镜像，镜像文件使用cirros-0.3.4-x86_64-disk.img。 </p>
+<p>将openstack image show cirros_0.3.4命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">glance image-create --name &quot;cirros_0.3.4&quot; --disk-format qcow2 --container-format bare --progress &lt; ./cirros-0.3.4-x86_64-disk.img</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="6-搭建计算服务组件"><a href="#6-搭建计算服务组件" class="headerlink" title="6. 搭建计算服务组件"></a>6. 搭建计算服务组件</h1><p>在controller节点执行openstack-controller-nova.sh，compute节点执行openstackcompute-nova.sh，会自行安装nova服务和完成相关配置。使用openstack命令创建一个名为 m1,ID为56，内存为2048MB,磁盘容量为20GB,vCPU数量为2的云主机类型。在controller节点将openstack flavor show m1命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 使用openstack命令创建一个名为 m1,ID为56，内存为2048MB,磁盘容量为20GB,vCPU数量为2的云主机类型</span><br><span class="line">openstack flavor create --id 56 --ram 2048 --disk 20 --vcpus 2 m1</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="7-搭建网络组件并初始化网络"><a href="#7-搭建网络组件并初始化网络" class="headerlink" title="7. 搭建网络组件并初始化网络"></a>7. 搭建网络组件并初始化网络</h1><p>在controller节点执行openstack-controller-neutron.sh,compute节点执行openstac k-compute-neutron.sh，会自行安装neutron服务并完成配置。创建云主机外部网络ext-net，子网为ext-subnet，云主机浮动 IP 可用网段为 192.168.200.100~192.168.200.200，网关为 192.168.200.1。在controller节点将openstack subnet show ext-subnet命令的返回结果提交到答题框。</p>
+<p>【2分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">openstack network create --external --provider-network-type flat --provider-physical-network provider ext-net</span><br><span class="line">openstack subnet create --network ext-net --allocation-pool start=192.168.200.100,end=192.168.200.200 --subnet-range 192.168.200.0/24 --gateway 192.168.200.1 ext-subnet</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="8-搭建图形化界面"><a href="#8-搭建图形化界面" class="headerlink" title="8. 搭建图形化界面"></a>8. 搭建图形化界面</h1><p>在 controller节点执行openstack-controller-dashboard.sh脚本，会自行安装 dashboard服务并完成配置。请修改compute节点nova配置文件，使之后创建的实例可以在网页通过公网访问控制台页面。</p>
+<p>在compute节点请将cat &#x2F;etc&#x2F;nova&#x2F;nova.conf | grep 公网IP 命令的返回结果提交到</p>
+<p>答题框。（例:cat &#x2F;etc&#x2F;nova&#x2F;nova.conf | grep 121.36.12.138）【2分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/nova/nova.conf</span><br><span class="line">```</span><br><span class="line">添加以下配置项，以允许实例的 VNC 控制台通过公网访问。确保将 &lt;controller_public_IP&gt; 替换为实际的 Controller 节点的公网 IP 地址。</span><br><span class="line">[vnc]</span><br><span class="line">novncproxy_base_url = http://&lt;controller_public_IP&gt;:6080/vnc_auto.html</span><br><span class="line">xvpvncproxy_base_url = http://&lt;controller_public_IP&gt;:6081/console</span><br><span class="line">novncproxy_port = 6080</span><br><span class="line">xvpvncproxy_port = 6081</span><br><span class="line">vncserver_listen = 0.0.0.0</span><br><span class="line">vncserver_proxyclient_address = &lt;compute_node_IP&gt;</span><br><span class="line">```</span><br><span class="line"># 重启compute节点nova服务</span><br><span class="line">systemctl restart openstack-nova-compute</span><br></pre></td></tr></table></figure>
+
+
+
+<p>任务 <strong>3 OpenStack</strong> 运维任务（<strong>20</strong> 分） </p>
+<p>某公司构建了一套内部私有云系统，这套私有云系统将为公司内部提供计算服务。你将作为该私有云的维护人员，请完成以下运维工作。</p>
+<h1 id="1-数据库管理"><a href="#1-数据库管理" class="headerlink" title="1. 数据库管理"></a>1. 数据库管理</h1><p>请使用数据库命令将所有数据库备份到&#x2F;root路径下,备份文件名为openstack.sql，完成</p>
+<p>后使用命令查看文件属性其中文件大小以mb显示。请将所有命令和返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 使用数据库命令将所有数据库备份到/root路径下,备份文件名为openstack.sql</span><br><span class="line">mysqldump -uroot -p000000 --all-databases &gt; /root/openstack.sql</span><br><span class="line"># 使用命令查看文件属性其中文件大小以mb显示</span><br><span class="line">ll -h /root/openstack.sql</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-数据库管理"><a href="#2-数据库管理" class="headerlink" title="2. 数据库管理"></a>2. 数据库管理</h1><p>进入数据库，创建本地用户examuser，密码为 000000，然后查询mysql数据库中的 use</p>
+<p>r 表的user,host,password字段。然后赋予这个用户所有数据库的“查询”“删除”“更新” “创建”的权限。 </p>
+<p>将select User, Select_priv,Update_priv,Delete_priv,Create_priv from user;命令的返回结果提交到答题框。【1分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 进入数据库</span><br><span class="line">mysql -uroot -p000000</span><br><span class="line"># 创建本地用户examuser，密码为 000000</span><br><span class="line">CREATE USER &#x27;examuser&#x27;@&#x27;localhost&#x27; IDENTIFIED BY &#x27;000000&#x27;;</span><br><span class="line"># 查询mysql数据库中的 user 表的user,host,password字段</span><br><span class="line">use mysql;</span><br><span class="line">select user, host, password from user;</span><br><span class="line"># 赋予这个用户所有数据库的“查询”“删除”“更新” “创建”的权限</span><br><span class="line">GRANT SELECT, UPDATE, DELETE, CREATE ON *.* TO &#x27;examuser&#x27;@&#x27;localhost&#x27;;</span><br><span class="line"># 查询用户权限</span><br><span class="line">select User,Select_priv,Update_priv,Delete_priv,Create_priv from user;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="3-安全组管理"><a href="#3-安全组管理" class="headerlink" title="3. 安全组管理"></a>3. 安全组管理</h1><p>使用openstack命令创建名称为group_web的安全组该安全组的描述为”Custom securi</p>
+<p>ty group”，用openstack命令为安全组添加icmp规则和ssh规则允许任意ip地址访问web, 完成后使用openstack命令查看该安全组的详细信息。 </p>
+<p>将openstack security group show group_web命令的返回结果提交到答题框。【2分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 使用openstack命令创建名称为group_web的安全组该安全组的描述为”Custom security group”</span><br><span class="line">openstack security group create group_web --description &quot;Custom security group&quot;</span><br><span class="line"># 允许 ICMP 规则：</span><br><span class="line">openstack security group rule create --proto icmp group_web</span><br><span class="line"># 允许 SSH 规则：</span><br><span class="line">openstack security group rule create --proto tcp --dst-port 22 group_web</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-项目管理"><a href="#4-项目管理" class="headerlink" title="4. 项目管理"></a>4. 项目管理</h1><p>在 keystone 中使用openstack创建shop项目添加描述为”Hello shop”，完成后使用openstack命令禁用该项目，然后使用openstack命令查看该项目的详细信息。将openstack project show shop命令的返回结果提交到答题框。【2分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 在keystone 中使用openstack创建shop项目添加描述为”Hello shop”</span><br><span class="line">openstack project create --description &quot;Hello shop&quot; --domain demo shop</span><br><span class="line"># 完成后使用openstack命令禁用该项目</span><br><span class="line">openstack project set --domain demo --disable shop</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5-用户管理"><a href="#5-用户管理" class="headerlink" title="5. 用户管理"></a>5. 用户管理</h1><p>使用openstack命令查看admin租户的当前配额值、将admin租户的实例配额提升到13，</p>
+<p>然后查看修改后admin租户的配额值。</p>
+<p>将openstack quota show admin命令的返回结果提交到答题框。【2分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 使用openstack命令查看admin租户的当前配额值</span><br><span class="line">openstack quota show admin</span><br><span class="line"># 将admin租户的实例配额提升到13</span><br><span class="line">openstack quota set --instances 13 admin</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="6-heat模板管理"><a href="#6-heat模板管理" class="headerlink" title="6. heat模板管理"></a>6. heat模板管理</h1><p>执行脚本openstack-controller-heat.sh安装完heat服务后，编写Heat模板create_f</p>
+<p>lavor.yaml，创建名为“m2.flavor”、ID为 1234、内存为1024MB、硬盘为20GB、vcpu数量为1的云主机类型，创建完成后使用openstack命令查看堆栈列表。将openstack stack list命令的返回结果提交到答题框。【2分】 、</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 编写Heat模板create_flavor.yaml</span><br><span class="line">vi create_flavor.yaml</span><br><span class="line">```</span><br><span class="line">heat_template_version: 2013-05-23</span><br><span class="line">resources:</span><br><span class="line">  m2_flavor:</span><br><span class="line">    type: OS::Nova::Flavor</span><br><span class="line">    properties:</span><br><span class="line">      name: m2.flavor</span><br><span class="line">      flavorid: 1234</span><br><span class="line">      ram: 1024</span><br><span class="line">      vcpus: 1</span><br><span class="line">      disk: 20</span><br><span class="line">```</span><br><span class="line"># 使用Heat创建堆栈</span><br><span class="line">openstack stack create -t create_flavor.yaml m2-flavor-stack</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="7-后端配置文件管理"><a href="#7-后端配置文件管理" class="headerlink" title="7. 后端配置文件管理"></a>7. 后端配置文件管理</h1><p>修改glance后端配置文件，将项目的映像存储限制为10GB,完成后重启glance服务。 </p>
+<p>将cat &#x2F;etc&#x2F;glance&#x2F;glance-api.conf |grep _quota命令的返回结果提交到答题框。【2 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/glance/glance-api.conf</span><br><span class="line">```</span><br><span class="line">image_size_cap = 104857600(10737,418,240)</span><br><span class="line">```</span><br><span class="line"># 重启glance服务</span><br><span class="line">systemctl restart openstack-glance-api</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="8-存储服务管理"><a href="#8-存储服务管理" class="headerlink" title="8. 存储服务管理"></a>8. 存储服务管理</h1><p>在controller节点执行openstack-controller-cinder.sh,compute节点执行openstack -compute-cinder.sh，在controller和compute节点上会自行安装cinder服务并完成配置。使用openstack命令创建一个名为lvm的卷类型，使用cinder命令创建该类型规格键值对，要求lvm卷类型对应cinder后端驱动lvm所管理的存储资源,名字lvm_test，大小1G的云硬盘并查询该云硬盘的详细信息。</p>
+<p>将cinder show lvm_test命令的返回结果提交到答题框。【2分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># 创建名为lvm的卷类型</span><br><span class="line">openstack volume type create lvm</span><br><span class="line"># 使用cinder命令创建规格键值对</span><br><span class="line">cinder type-key lvm set volume_backend_name=lvm</span><br><span class="line"># 创建1G大小的云硬盘</span><br><span class="line">openstack volume create --size 1 --type lvm lvm_test</span><br><span class="line"># 查询云硬盘的详细信息</span><br><span class="line">openstack volume show lvm_test</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="9-存储管理"><a href="#9-存储管理" class="headerlink" title="9. 存储管理"></a>9. 存储管理</h1><p>为了减缓来自实例的数据访问速度的变慢，OpenStack Block Storage 支持对卷数据复制带宽的速率限制。请修改cinder后端配置文件将卷复制带宽限制为最高100MiB&#x2F;s（对应数值修改为104857600）。 </p>
+<p>将cat &#x2F;etc&#x2F;cinder&#x2F;cinder.conf | grep 104857600命令的返回结果提交到答题框。【2 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/cinder/cinder.conf</span><br><span class="line">```</span><br><span class="line">[DEFAULT]</span><br><span class="line">replication_bandwidth = 104857600</span><br><span class="line">```</span><br><span class="line"># 重启cinder服务</span><br><span class="line">systemctl restart openstack-cinder-*</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="10-存储管理"><a href="#10-存储管理" class="headerlink" title="10. 存储管理"></a>10. 存储管理</h1><p>在controller节点执行openstack-controller-swift.sh,compute节点执行openstack-</p>
+<p>compute-swift.sh，在controller和compute节点上会自行安装swift服务并完成配置。使用swift命令创建一个名为file的容器并查看，然后把cirros-0.3.4-x86_64-disk.img上传到file容器中。将swift stat file命令的返回结果提交到答题框。【2分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 用swift命令创建一个名为file的容器</span><br><span class="line">swift post file</span><br><span class="line"># 把cirros-0.3.4-x86_64-disk.img上传到file容器中</span><br><span class="line">swift upload file cirros-0.3.4-x86_64-disk.img</span><br><span class="line"># 查看刚创建的swift容器</span><br><span class="line">swift stat file</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="11-OpenStack-API-管理"><a href="#11-OpenStack-API-管理" class="headerlink" title="11. OpenStack API 管理"></a>11. OpenStack API 管理</h1><p>使用curl的方式获取admin用户token值；使用已获取的token值通过curl的方式获取</p>
+<p>domain为default所有用户名（ip使用主机名）。将获取到的所有用户名提交到答题框。【2分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># 获取admin用户的token值</span><br><span class="line">TOKEN=$(curl -si -X POST http://&lt;OpenStack-IP&gt;:5000/v3/auth/tokens \</span><br><span class="line">  -H &quot;Content-Type: application/json&quot; \</span><br><span class="line">  -d &#x27;&#123;</span><br><span class="line">    &quot;auth&quot;: &#123;</span><br><span class="line">      &quot;identity&quot;: &#123;</span><br><span class="line">        &quot;methods&quot;: [&quot;password&quot;],</span><br><span class="line">        &quot;password&quot;: &#123;</span><br><span class="line">          &quot;user&quot;: &#123;</span><br><span class="line">            &quot;name&quot;: &quot;admin&quot;,</span><br><span class="line">            &quot;domain&quot;: &#123; &quot;name&quot;: &quot;default&quot; &#125;,</span><br><span class="line">            &quot;password&quot;: &quot;admin-password&quot;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;,</span><br><span class="line">      &quot;scope&quot;: &#123;</span><br><span class="line">        &quot;project&quot;: &#123;</span><br><span class="line">          &quot;name&quot;: &quot;admin&quot;,</span><br><span class="line">          &quot;domain&quot;: &#123; &quot;name&quot;: &quot;default&quot; &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;&#x27; | awk &#x27;/X-Subject-Token/ &#123; print $2 &#125;&#x27;)</span><br><span class="line"></span><br><span class="line"># 输出admin用户的token值</span><br><span class="line">echo $TOKEN</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>任务四 <strong>OpenStack</strong> 架构任务（<strong>15</strong> 分） </p>
+<h1 id="1-安装python3环境"><a href="#1-安装python3环境" class="headerlink" title="1. 安装python3环境"></a>1. 安装python3环境</h1><p>在controller节点安装python3环境。安装完之后查看python3版本，使用提供的whl文件安装依赖。将pip3 list命令的返回结果提交到答题框。【5分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 安装python</span><br><span class="line">yum install -y epel-release</span><br><span class="line">yum install -y python3 python3-pip</span><br><span class="line"># 使用提供的 whl 文件安装依赖</span><br><span class="line">pip3 install example.whl</span><br><span class="line"># 查看已安装的 Python 包列表</span><br><span class="line">pip3 list</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-python对接OpenStack-API创建image镜像"><a href="#2-python对接OpenStack-API创建image镜像" class="headerlink" title="2. python对接OpenStack API创建image镜像"></a>2. python对接OpenStack API创建image镜像</h1><p>编写python代码对接OpenStack API，完成镜像的上传。在controller节点的&#x2F;root目录下创建create_image.py文件，在该文件中编写python代码对接openstack api（需在py 文件中获取token），要求在openstack私有云平台中上传镜像cirros-0.3.4-x86_64-disk.i mg，名字为cirros001，disk_format为qcow2，container_format为bare。执行完代码要求输出“创建镜像成功，id为：xxxxxx”。 </p>
+<p>分别将cat &#x2F;root&#x2F;create_image.py命令和python3 create_image.py命令的返回结果提交到答题框。【5分】 </p>
+<h1 id="3-python对接OpenStack-API创建用户"><a href="#3-python对接OpenStack-API创建用户" class="headerlink" title="3. python对接OpenStack API创建用户"></a>3. python对接OpenStack API创建用户</h1><p>编写python代码对接OpenStack API，完成用户的创建。在controller节点的&#x2F;root目</p>
+<p>录下创建create_user.py文件，在该文件中编写python代码对接openstack api（需在py 文件中获取token），要求在openstack私有云平台中创建用户guojibeisheng。 </p>
+<p>将cat &#x2F;root&#x2F;create_user.py命令的返回结果提交到答题框。【5分】 </p>
+<p>B模块题目：容器的编排与运维 </p>
+<p>某企业计划使用 k8s 平台搭建微服务系统，现在先使用简单的微服务项目进行测试，请按照要求完成相应任务。 </p>
+<p>表 1 IP 地址规划 </p>
+<table>
+<thead>
+<tr>
+<th>设备名称</th>
+<th>主机名</th>
+<th>接口</th>
+<th>IP地址</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>云服务器1</td>
+<td>master</td>
+<td>eth0</td>
+<td>公网 IP:******** 私网IP:192.168.100.*&#x2F;24</td>
+<td>Harbor也是使用该云服务器</td>
+</tr>
+<tr>
+<td>云服务器2</td>
+<td>node</td>
+<td>eth0</td>
+<td>公网 IP:******** 私网IP:192.168.100.*&#x2F;24</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>说明： </p>
+<p>1.表1中的公网IP和私网IP以自己云主机显示为准，每个人的公网IP和私网IP不同。使用第三方软件远程连接云主机，使用公网IP连接。 </p>
+<p>2.华为云中云主机名字已命好，直接使用对应名字的云主机即可。</p>
+<p>  3.所有的软件包存放于&#x2F;root目录。</p>
+<p>​    </p>
+<p>任务 1容器云平台环境初始化（10.5分） </p>
+<h1 id="1-容器云平台的初始化"><a href="#1-容器云平台的初始化" class="headerlink" title="1.容器云平台的初始化"></a>1.容器云平台的初始化</h1><p>master 节点主机名设置为 master、node 节点主机名设置为 node，所有节点 root 密码设置为 000000,所有</p>
+<p>节点关闭 swap，并配置 hosts 映射。</p>
+<p>请在 master 节点将 ping node -c 3 命令的返回结果提交到答题框。【1.5 分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 在Master节点上执行以下命令以设置主机名为&quot;master&quot;：</span><br><span class="line">hostnamectl set-hostname master</span><br><span class="line"># 在Node节点上执行以下命令以设置主机名为&quot;node&quot;：</span><br><span class="line">hostnamectl set-hostnmae node</span><br><span class="line"># 所有节点 root 密码设置为 000000</span><br><span class="line">sudo passwd root</span><br><span class="line"># 关闭Swap：</span><br><span class="line">swapoff -a</span><br><span class="line"># 在系统重启后保持Swap被禁用，您需要编辑 /etc/fstab 文件并注释掉包含Swap的行</span><br><span class="line"># 配置hosts映射</span><br><span class="line">vi /etc/hosts</span><br><span class="line">```</span><br><span class="line">&lt;master ip&gt; master</span><br><span class="line">&lt;node ip&gt; node</span><br><span class="line">```</span><br><span class="line">#在Master节点上执行以下命令以测试与Node节点的连接：</span><br><span class="line">ping node -c 3</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2．镜像文件的复制"><a href="#2．镜像文件的复制" class="headerlink" title="2．镜像文件的复制"></a>2．镜像文件的复制</h1><p>&#x2F;root 目录存放有 CentOS-7-x86_64-DVD-2009.iso 和 kubernetes_V1.2.iso 光盘镜像文件，在&#x2F;opt 目录下使用命令创建 centos 目录，并将镜像文件 CentOS-7-x86_64-DVD-2009.iso 中的内容复制到 centos 目录下，将镜像文件 kubernetes_V1.2.iso 中的内容复制到 &#x2F;opt 目录下。请在 master 节点将 du -h &#x2F;opt&#x2F; –max-depth&#x3D;1 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 创建 centos 目录</span><br><span class="line">mkdir /opt/centos</span><br><span class="line"># 将镜像文件 CentOS-7-x86_64-DVD-2009.iso 中的内容复制到 centos 目录下</span><br><span class="line">mount -o loop CentOS-7-x86_64-DVD-2009.iso /mnt</span><br><span class="line">cp -rfv /mnt/* /opt/centos</span><br><span class="line">umount /mnt</span><br><span class="line"># 复制kubernetes镜像内容</span><br><span class="line">mount -o loop kubernetes_V1.2.iso /mnt</span><br><span class="line">cp -rfv /mnt/* /opt</span><br><span class="line">umount /mnt</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="3．Yum源的编写"><a href="#3．Yum源的编写" class="headerlink" title="3．Yum源的编写"></a>3．Yum源的编写</h1><p>在 master 节点首先将系统自带的 yum 源移动到&#x2F;home 目录，然后为 master 节点配置本地 yum 源，yum 源文件名为 local.repo。</p>
+<p>将 yum repolist 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#将系统自带的 yum 源移动到/home 目录</span><br><span class="line">mv /etc/yum.repos.d/* /home</span><br><span class="line">#为 master 节点配置本地 yum 源，yum 源文件名为 local.repo</span><br><span class="line">vi /etc/yum.repos.d/local.repo</span><br><span class="line">```</span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=file:///opt/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">[kubernetes]</span><br><span class="line">name=kubernetes</span><br><span class="line">baseurl=file:///opt/kubernetes-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4．安装ftp服务"><a href="#4．安装ftp服务" class="headerlink" title="4．安装ftp服务"></a>4．安装ftp服务</h1><p>在 master 节点安装 ftp 服务，将 ftp 共享目录设置为 &#x2F;opt。</p>
+<p>将 ps -ef | grep ftp 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 安装ftp服务</span><br><span class="line">yum install -y vsftpd</span><br><span class="line"># 将ftp共享目录设置为/opt</span><br><span class="line">vi /etc/vsftpd/vsftpd.conf</span><br><span class="line">```</span><br><span class="line">anon_root=/opt</span><br><span class="line">```</span><br><span class="line"># 重启ftp服务</span><br><span class="line">systemctl enable vsftpd &amp;&amp; systemctl restart vsftpd</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5．ftp源的编写"><a href="#5．ftp源的编写" class="headerlink" title="5．ftp源的编写"></a>5．ftp源的编写</h1><p>为 node 节点配置 ftp 源，ftp 源文件名称为 ftp.repo，其中 ftp 服务器地址为 master 节点,配置 ftp 源时不</p>
+<p>要写 IP 地址。 </p>
+<p>在 node 节点请将 curl <a href="ftp://master/">ftp://master</a> 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># 为 node 节点配置 ftp 源，ftp 源文件名称为 ftp.repo</span><br><span class="line">mv /etc/yum.repos.d/* /home</span><br><span class="line">vi /etc/yum.repos.d/ftp.repo</span><br><span class="line">```</span><br><span class="line">[centos]</span><br><span class="line">name=centos</span><br><span class="line">baseurl=ftp://master/centos</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">[kubernetes]</span><br><span class="line">name=kubernetes</span><br><span class="line">baseurl=ftp://master/kubernetes-repo</span><br><span class="line">gpgcheck=0</span><br><span class="line">enabled=1</span><br><span class="line">```</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="6-设置时间同步服务器"><a href="#6-设置时间同步服务器" class="headerlink" title="6.设置时间同步服务器"></a>6.设置时间同步服务器</h1><p>在 master 节点上部署 chrony 服务器，允许其它节点同步时间，启动服务并设置为开机自启动；在其他节点上指定 master 节点为上游 NTP 服务器，重启服务并设为开机自启动。（配置文件 IP 用计算机名代替）在 node 节点将 chronyc sources 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"># 在Master节点上执行以下步骤：</span><br><span class="line"># 安装Chrony服务：</span><br><span class="line">yum install -y chrony</span><br><span class="line"># 编辑Chrony配置文件：</span><br><span class="line">vi /etc/chrony/chrony.conf</span><br><span class="line">```</span><br><span class="line">allow &lt;node ip&gt;</span><br><span class="line">```</span><br><span class="line"># 启动Chrony服务并设置为开机自启动：</span><br><span class="line">systemctl start chronyd</span><br><span class="line">systemctl enable chronyd</span><br><span class="line"># 在node上执行以下步骤：</span><br><span class="line">yum install -y chrony</span><br><span class="line"># 编辑Chrony配置文件：</span><br><span class="line">vi /etc/chrony/chrony.conf</span><br><span class="line">```</span><br><span class="line">server &lt;master ip&gt; iburst</span><br><span class="line">```</span><br><span class="line"># 重启Chrony服务并设置为开机自启动：</span><br><span class="line">systemctl restart chronyd</span><br><span class="line">systemctl enable chronyd</span><br><span class="line"># 查看Chrony的时间同步源：</span><br><span class="line">chronyc sources</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="7-设置免密登录"><a href="#7-设置免密登录" class="headerlink" title="7.设置免密登录"></a>7.设置免密登录</h1><p>为两台台服务器设置免密登录，保证服务器之间能够互相免密登录。</p>
+<p>在 master 节点将 ssh node 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 在本地主机上创建公钥和密钥</span><br><span class="line">ssh-keygen</span><br><span class="line"># 用 ssh-copy-id 把公钥复制到远程主机</span><br><span class="line"> ssh-copy-id root@&lt;远程主机 ip&gt;</span><br><span class="line"># 直接登录远程主机</span><br><span class="line">ssh &lt;远程主机 ip&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>任务2 k8s搭建任务（19.5分） </p>
+<h1 id="1-安装docker应用"><a href="#1-安装docker应用" class="headerlink" title="1.安装docker应用"></a>1.安装docker应用</h1><p>在所有节点上安装 dokcer-ce,并设置为开机自启动。在 master 节点请将 docker version 命令的返回结果提交到答题框。【1.5 分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 安装docker-ce</span><br><span class="line">yum install -y docker-ce</span><br><span class="line"># 启动Docker服务并设置为开机自启动：</span><br><span class="line">systemctl start docker</span><br><span class="line">systemctl enable docker</span><br><span class="line"># 查看Docker版本信息：</span><br><span class="line">docker version</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-安装docker应用"><a href="#2-安装docker应用" class="headerlink" title="2.安装docker应用"></a>2.安装docker应用</h1><p>所有节点配置阿里云镜像加速地址(<a target="_blank" rel="noopener" href="https://d8b3zdiw.mirror.aliyuncs.com)并把启动引擎设置为/">https://d8b3zdiw.mirror.aliyuncs.com)并把启动引擎设置为</a> systemd，配置成功后加载配置文件并重启 docker 服务。</p>
+<p>将 docker pull ubuntu 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">s# 编辑dockers配置文件</span><br><span class="line">vi /etc/docker/daemon.json</span><br><span class="line">```</span><br><span class="line">&#123;</span><br><span class="line">  &quot;insecure-registries&quot; : [&quot;0.0.0.0/0&quot;],</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;https://d8b3zdiw.mirror.aliyuncs.com&quot;],</span><br><span class="line">   &quot;exec-opts&quot;: [&quot;native.cgroupdriver=systemd&quot;]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"># 加载配置文件并重启Docker服务：</span><br><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl restart docker</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="3-载入镜像"><a href="#3-载入镜像" class="headerlink" title="3.载入镜像"></a>3.载入镜像</h1><p> 在 master 节点&#x2F;opt&#x2F;images 目录下使用 tar 归档文件载入镜像。   将 docker images | grep mysql 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 在 master 节点/opt/images 目录下使用 tar 归档文件载入镜像</span><br><span class="line">cd /opt/images</span><br><span class="line">docker load -i /opt/images/images.tar</span><br><span class="line"># 查看Docker镜像中是否存在MySQL镜像：</span><br><span class="line">docker images | grep mysql</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-安装docker-compose"><a href="#4-安装docker-compose" class="headerlink" title="4.安装docker-compose"></a>4.安装docker-compose</h1><p>在 master 节点使用 &#x2F;opt&#x2F;docker-compose&#x2F;v2.10.2-docker-compose-linux-x86_64 文件安装 docker-compose。安装完成后执行 docker-compose version 命令。将 docker-compose version 命令的返回结果提交到答题框。【1.5 分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 赋予二进制文件运行权限</span><br><span class="line">chmod +x /opt/docker-compose/v2.10.2-docker-compose-linux-x86_64</span><br><span class="line"># 创建软连接</span><br><span class="line">mv /opt/docker-compose/v2.10.2-docker-compose-linux-x86_64 /usr/local/bin/docker-compose</span><br><span class="line"># 查看docker-compose的版本信息</span><br><span class="line">docker-compose version</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5-搭建harbor仓库"><a href="#5-搭建harbor仓库" class="headerlink" title="5.搭建harbor仓库"></a>5.搭建harbor仓库</h1><p>在 master 节点解压&#x2F;opt&#x2F;harbor&#x2F; harbor-offline-installer-v2.5.3.tgz离线安装包，然后安装 harbor 仓库，并修改相应的 yml 文件，使各节点默认 docker 仓库为 harbor 仓库地址。 </p>
+<p>在 master 节点请将 docker-compose ps 命令的返回结果提交到答题框。【1.5 分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"># 在 master 节点解压/opt/harbor/ harbor-offline-installer-v2.5.3.tgz离线安装包</span><br><span class="line">tar -zxvf /opt/harbor/harbor-offline-installer-v2.5.3.tgz -C /opt/harbor/</span><br><span class="line"># 安装Harbor仓库：</span><br><span class="line">cd /opt/harbor/harbor</span><br><span class="line">./prepare</span><br><span class="line">./install.sh --with-clair</span><br><span class="line"># 修改配置文件,将各节点的默认Docker仓库地址设置为Harbor仓库地址：</span><br><span class="line">vi /opt/harbor/harbor/harbor.yml</span><br><span class="line">```</span><br><span class="line">hostname: harbor.example.com</span><br><span class="line">harbor_admin_password: your_password</span><br><span class="line">```</span><br><span class="line"># 重新启动Harbor：</span><br><span class="line">./install.sh</span><br><span class="line"># 查看Docker Compose容器状态：</span><br><span class="line">docker-compose -f /opt/harbor/harbor/docker-compose.yml ps</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="6-上传docker镜像"><a href="#6-上传docker镜像" class="headerlink" title="6.上传docker镜像"></a>6.上传docker镜像</h1><p>在 master 节点执行&#x2F;opt&#x2F;k8s_image_push.sh 将所有镜像上传至 docker 仓库。 </p>
+<p>将 docker login master 命令的返回结果提交到答题框(填写完整提示输入的内容)。【1.5 分】</p>
+<h1 id="7-部署Kubeadm、containerd、nerdctl和buildkit"><a href="#7-部署Kubeadm、containerd、nerdctl和buildkit" class="headerlink" title="7.部署Kubeadm、containerd、nerdctl和buildkit"></a>7.部署Kubeadm、containerd、nerdctl和buildkit</h1><p> 执行&#x2F;opt&#x2F;k8s_con_ner_bui_install.sh 部署 Kubeadm、containerd、nerdctl 和 buildkit。 </p>
+<p>   将 ctr version 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 在Master节点上运行脚本部署所需组件：</span><br><span class="line">sh /opt/k8s_con_ner_bui_install.sh</span><br><span class="line">ctr version</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="8-初始化集群"><a href="#8-初始化集群" class="headerlink" title="8.初始化集群"></a>8.初始化集群</h1><p>在 master 节点kubeadm命令初始化集群，使用本地 Harbor 仓库。   将 kubectl get nodes 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> kubeadm init \</span><br><span class="line">	--apiserver-advertise-address=&lt;master ip&gt; \</span><br><span class="line">	--image-repository &lt;harbor仓库 地址&gt; \</span><br><span class="line">	--kubernetes-version &lt;k8s 版本&gt; \</span><br><span class="line">	--service-cidr=10.96.0.0/12 \</span><br><span class="line">	--pod-network-cidr=10.244.0.0/16</span><br><span class="line"># master设置kubectl的配置：</span><br><span class="line">mkdir -p $HOME/.kube</span><br><span class="line">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</span><br><span class="line">sudo chown $(id -u):$(id -g) $HOME/.kube/config</span><br><span class="line"># 检查集群状态和节点：</span><br><span class="line">kubectl get nodes</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="9-安装kubernetes网络插件"><a href="#9-安装kubernetes网络插件" class="headerlink" title="9.安装kubernetes网络插件"></a>9.安装kubernetes网络插件</h1><p>修改提供的&#x2F;opt&#x2F;yaml&#x2F;flannel&#x2F;kube-flannel.yaml,使其镜像来源为本地 Harbor 仓库，然后安装 kubernetes 网络插件，安装完成后使用命令查看节点状态。</p>
+<p>将 kubectl get pods -A 命令的返回结果提交到答题框。【1.5 分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi /opt/yaml/flannel/kube-flannel.yaml</span><br><span class="line">```</span><br><span class="line">containers:</span><br><span class="line">- name: kube-flannel</span><br><span class="line">  image: &lt;harbor仓库 地址&gt; /kube-flannel:v0.14.0</span><br><span class="line">```</span><br><span class="line"># master节点上运行安装网络插件：</span><br><span class="line">kubectl apply -f /opt/yaml/flannel/kube-flannel.yaml</span><br><span class="line"># 查看节点状态：</span><br><span class="line">kubectl get pods -A</span><br></pre></td></tr></table></figure>
+
+<h1 id="10-创建证书"><a href="#10-创建证书" class="headerlink" title="10.创建证书"></a>10.创建证书</h1><p> 给 kubernetes 创建证书,命名空间为 kubernetes-dashboard,涉及到的所有文件命名为 dashboard 例如 dashboard.crt。 </p>
+<p>将 kubectl get csr 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 创建命名空间</span><br><span class="line">kubectl create namespace kubernetes-dashboard</span><br><span class="line"># 创建证书Secret</span><br><span class="line">mkdir dashboard-certs</span><br><span class="line">cd dashboard-certs</span><br><span class="line">openssl genrsa -out dashboard.key 2048</span><br><span class="line">openssl req -days 36000 -new -out dashboard.csr -key dashboard.key -subj &#x27;/CN=dashboard-cert&#x27;</span><br><span class="line">openssl x509 -req -in dashboard.csr -signkey dashboard.key -out dashboard.crt</span><br><span class="line">kubectl create secret generic kubernetes-dashboard-certs --from-file=dashboard.key --from-file=dashboard.crt -n kubernetes-dashboard</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="11-kubernetes-图形化界面的安装"><a href="#11-kubernetes-图形化界面的安装" class="headerlink" title="11.kubernetes 图形化界面的安装"></a>11.kubernetes 图形化界面的安装</h1><p>修改&#x2F;opt&#x2F;yaml&#x2F;dashboard&#x2F;recommended.yaml 的镜像来源为本地 Harbor 仓库，然后使用&#x2F;opt&#x2F;yaml&#x2F;dashboa</p>
+<p>rd&#x2F;recommended.yaml 和&#x2F;opt&#x2F;yaml&#x2F;dashboard&#x2F;dashadmin-user.yaml安装 kubernetes dashboard 界面，完成后查看首页。 </p>
+<p>将 kubectl get svc -n kubernetes-dashboard 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 修改/opt/yaml/dashboard/recommended.yaml 的镜像来源为本地 Harbor 仓库</span><br><span class="line">vi /opt/yaml/doshboard/recommended.yaml</span><br><span class="line">```</span><br><span class="line">image: &lt;harbor仓库 ip&gt;/kubernetesui/dashboard:v2.3.1</span><br><span class="line">```</span><br><span class="line"># 安装 kubernetes dashboard 界面</span><br><span class="line">kubectl apply -f /opt/yaml/dashboard/recommended.yaml</span><br><span class="line">kubectl apply -f /opt/yaml/dashboard/dashadmin-user.yaml</span><br><span class="line"># 查看Dashboard首页：</span><br><span class="line">kubectl get svc -n kubernetes-dashboard</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="12-删除污点"><a href="#12-删除污点" class="headerlink" title="12.删除污点"></a>12.删除污点</h1><p>为了能使 pod 调度到 master 节点,用命令删除污点。在浏览器访问 dashboard（<a href="https://IP:30001）">https://IP:30001）</a> </p>
+<p>将 kubectl describe nodes master | grep Taints 命令的返回结果提交到答题框。【1.5 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 删除污点</span><br><span class="line">kubectl taint nodes master node-role.kubernetes.io/master-</span><br><span class="line"># 访问Dashboard：</span><br><span class="line">浏览器中访问https://&lt;master ip&gt;:30001</span><br><span class="line"># 查看节点污点</span><br><span class="line">kubectl describe nodes master | grep Taints</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="13-扩展计算节点"><a href="#13-扩展计算节点" class="headerlink" title="13.扩展计算节点"></a>13.扩展计算节点</h1><p>在 node 节点执行 k8s_node_install.sh，将该节点加入 kubernetes 集群。完成后在 master 节点上查看所有节点状态。</p>
+<p>在 master 节点请将 kubectl get nodes 命令的返回结果提交到答题框。【1.5 分】</p>
+<h1 id="任务3部署Owncloud网盘服务（20-分）"><a href="#任务3部署Owncloud网盘服务（20-分）" class="headerlink" title="任务3部署Owncloud网盘服务（20 分）"></a>任务3部署Owncloud网盘服务（20 分）</h1><p>ownCloud 是一个开源免费专业的私有云存储项目，它能帮你快速在个人电脑或服务器上架设一套专属</p>
+<p>的私有云文件同步网盘，可以像 百度云那样实现文件跨平台同步、共享、版本控制、团队协作等。</p>
+<h1 id="1-创建PV和PVC"><a href="#1-创建PV和PVC" class="headerlink" title="1.创建PV和PVC"></a>1.创建PV和PVC</h1><p> 编写 yaml 文件(文件名自定义)创建 PV 和 PVC 来提供持久化存储，以便保存 ownCloud 服务中的文件和数据。 </p>
+<p>要求：PV（访问模式为读写，只能被单个节点挂载;存储为 5Gi;存储类型为 hostPath,存储路径自定义）    PVC（访问模式为读写，只能被单个节点挂载;申请存储空间大小为 5Gi）  将 kubectl get pv,pvc 命令的返回结果提交到答题框。【4 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"># 编写yaml文件</span><br><span class="line">vi pv.yaml</span><br><span class="line">```</span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: PersistentVolume</span><br><span class="line">metadata:</span><br><span class="line">  name: owncloud-pv</span><br><span class="line">spec:</span><br><span class="line">  capacity:</span><br><span class="line">    storage: 5Gi</span><br><span class="line">  # volumeMode: Filesystem</span><br><span class="line">  accessModes:</span><br><span class="line">    - ReadWriteOnce</span><br><span class="line">  hostPath:</span><br><span class="line">    path: /your/custom/path # 请将此路径替换为实际路径</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line">vi pvc.yaml</span><br><span class="line">```</span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: PersistentVolumeClaim</span><br><span class="line">metadata:</span><br><span class="line">  name: owncloud-pvc</span><br><span class="line">spec:</span><br><span class="line">  accessModes:</span><br><span class="line">  - ReadWriteOnce</span><br><span class="line">  resources:</span><br><span class="line">    requests:</span><br><span class="line">      storage: 5Gi</span><br><span class="line">```</span><br><span class="line"># 应用创建PV和PVC：</span><br><span class="line">kubectl apply -f pv.yaml</span><br><span class="line">kubectl apply -f pvc.yaml</span><br><span class="line"># 查看PV和PVC：</span><br><span class="line">kubectl get pv,pvc</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-配置ConfigMap"><a href="#2-配置ConfigMap" class="headerlink" title="2. 配置ConfigMap"></a>2. 配置ConfigMap</h1><p> 编写 yaml 文件(文件名自定义)创建一个 configMap 对象，指定 OwnCloud 的环境变量。登录账号对应的环境变量为OWNCLOUD_ADMIN_USERNAME,密码对应的环境变量为OWNCLOUD_ADMIN_PASSWORD。</p>
+<p>（变量值自定义）</p>
+<p>  将 kubectl get ConfigMap 命令的返回结果提交到答题框。【4 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">vi configmap.yaml</span><br><span class="line">```</span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: ConfigMap</span><br><span class="line">metadata:</span><br><span class="line">  name: owncloud-config</span><br><span class="line">data:</span><br><span class="line">  OWNCLOUD_ADMIN_USERNAME: your_admin_username</span><br><span class="line">  OWNCLOUD_ADMIN_PASSWORD: your_admin_password</span><br><span class="line">```</span><br><span class="line"># 应用创建的ConfigMap：</span><br><span class="line">kubectl apply -f configmap.yaml</span><br><span class="line"># 查看ConfigMap：</span><br><span class="line">kubectl get cm</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="3-创建Secret"><a href="#3-创建Secret" class="headerlink" title="3.创建Secret"></a>3.创建Secret</h1><p>编写 yaml 文件(文件名自定义)创建一个 Secret 对象，以保存 OwnCloud 数据库的密码。对原始密码采用 b</p>
+<p>ase64 编码格式进行加密。  将 kubectl get Secret 命令的返回结果提交到答题框。【4 分】</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">vi secret.yaml</span><br><span class="line">```</span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: Secret</span><br><span class="line">metadata:</span><br><span class="line">  name: owncloud-secret</span><br><span class="line">type: Opaque</span><br><span class="line">data:</span><br><span class="line">  DB_PASSWORD: encoded_base64_password</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"># 给数据库密码采用base64b</span><br><span class="line">echo -n &quot;&lt;password&gt;&quot; | base64</span><br><span class="line">echo -n &quot;&lt;base 64 加密后的 password&gt;&quot; | base64 d</span><br><span class="line"># 应用创建的Secret：</span><br><span class="line">kubectl apply -f secret.yaml</span><br><span class="line"># 查看Secret：</span><br><span class="line">kubectl get Secret</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-部署owncloud-Deployment应用"><a href="#4-部署owncloud-Deployment应用" class="headerlink" title="4.部署owncloud Deployment应用"></a>4.部署owncloud Deployment应用</h1><p>编写 yaml 文件(文件名自定义) 创建 Deployment 对象, 指定 OwnCloud 的容器和相关的环境变量。(Deployment 资源命名为 owncloud-deployment,镜像为 Harbor 仓库中的 owncloud:latest，存储的挂载路径为&#x2F;var&#x2F; www&#x2F;html,其它根据具体情况进行配置)</p>
+<p>将 kubectl describe pod 命令的返回结果提交到答题框。【4 分】 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">vi owncloud-deployment.yaml</span><br><span class="line">```</span><br><span class="line">apiVersion: apps/v1</span><br><span class="line">kind: Deployment</span><br><span class="line">metadata:</span><br><span class="line">  name: owncloud-deployment</span><br><span class="line">spec:</span><br><span class="line">  # replicas: 1</span><br><span class="line">  selector:</span><br><span class="line">    matchLabels:</span><br><span class="line">      app: owncloud</span><br><span class="line">  template:</span><br><span class="line">    metadata:</span><br><span class="line">      labels:</span><br><span class="line">        app: owncloud</span><br><span class="line">    spec:</span><br><span class="line">      containers:</span><br><span class="line">      - name: owncloud</span><br><span class="line">        image: &lt;harbor仓库 ip&gt;/owncloud:latest</span><br><span class="line">        ports:</span><br><span class="line">        - containerPort: 80</span><br><span class="line">        volumeMounts:</span><br><span class="line">        - name: owncloud-storage</span><br><span class="line">          mountPath: /var/www/html</span><br><span class="line">      volumes:</span><br><span class="line">      - name: owncloud-storage</span><br><span class="line">        persistentVolumeClaim:</span><br><span class="line">          claimName: owncloud-pvc</span><br><span class="line">      env:</span><br><span class="line">      - name: OWNCLOUD_ADMIN_USERNAME</span><br><span class="line">        valueFrom:</span><br><span class="line">          configMapKeyRef:</span><br><span class="line">            name: owncloud-config</span><br><span class="line">            key: OWNCLOUD_ADMIN_USERNAME</span><br><span class="line">      - name: OWNCLOUD_ADMIN_PASSWORD</span><br><span class="line">        valueFrom:</span><br><span class="line">          configMapKeyRef:</span><br><span class="line">            name: owncloud-config</span><br><span class="line">            key: OWNCLOUD_ADMIN_PASSWORD</span><br><span class="line">      - name: DB_PASSWORD</span><br><span class="line">        valueFrom:</span><br><span class="line">          secretKeyRef:</span><br><span class="line">            name: owncloud-secret</span><br><span class="line">            key: DB_PASSWORD</span><br><span class="line">```</span><br><span class="line"># 应用创建的Deployment：</span><br><span class="line">kubectl apply -f owncloud-deployment.yaml</span><br><span class="line"># 查看Pod描述：</span><br><span class="line">kubectl describe pod -l app=owncloud</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="5-创建Service"><a href="#5-创建Service" class="headerlink" title="5.创建Service"></a>5.创建Service</h1><p>编写 yaml 文件(文件名自定义)创建一个 Service 对象将 OwnCloud 公开到集群外部。通过 <a target="_blank" rel="noopener" href="http://ip/">http://IP</a><a target="_blank" rel="noopener" href="http://ip/">:</a>端口号可查看 owncloud。【4 分】 </p>
+<p>将 kubectl get svc -A 命令的返回结果提交到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">vi owncloud-service.yaml</span><br><span class="line">```</span><br><span class="line">apiVersion: v1</span><br><span class="line">kind: Service</span><br><span class="line">metadata:</span><br><span class="line">  name: owncloud-service</span><br><span class="line">spec:</span><br><span class="line">  selector:</span><br><span class="line">    app: owncloud</span><br><span class="line">  ports:</span><br><span class="line">  - protocol: TCP</span><br><span class="line">    port: 80</span><br><span class="line">    targetPort: 80</span><br><span class="line">  type: NodePort</span><br><span class="line">```</span><br><span class="line"># 应用创建的Service：</span><br><span class="line">kubectl apply -f owncloud-service.yaml</span><br></pre></td></tr></table></figure>
+
+
+
+<p>C模块题目：企业级应用的自动化部署和运维</p>
+<p>虚拟机与环境规划 </p>
+<p>表3 </p>
+<table>
+<thead>
+<tr>
+<th>设备名称</th>
+<th>主机名</th>
+<th>接口</th>
+<th>IP地址</th>
+<th>角色</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>云服务器1</td>
+<td>ansible</td>
+<td>eth0</td>
+<td>公网 IP:******** 私网IP:192.168.100.*&#x2F;24</td>
+<td></td>
+</tr>
+<tr>
+<td>云服务器2</td>
+<td>host1</td>
+<td>eth0</td>
+<td>公网 IP:******** 私网IP:192.168.100.*&#x2F;24</td>
+<td></td>
+</tr>
+<tr>
+<td>云服务器3</td>
+<td>host2</td>
+<td>eth0</td>
+<td>公网 IP:******** 私网IP:192.168.100.*&#x2F;24</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>\1. 上表中的公网IP以自己云主机显示为准，每个人的公网IP不同。使用第三方软件远程连接云主机，使用公网IP连接。 </p>
+<p>2.华为云中云主机名字已命好，直接使用对应名字的云主机即可。 </p>
+<p>任务 1 企业级应用的自动化部署（15分） </p>
+<p>\1. Ansible 自动化运维工具部署主从数据库 </p>
+<p>（1）    修改主机名 ansible 节点主机名为 ansible,host1 节点主机名为 host1,host2 节点主机名为 host2,请使用提供的软件包在 ansible 节点安装 ansible。</p>
+<p>将 ansible –version 命令的返回结果提交到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"># 在ansible节点上执行：</span><br><span class="line">hostname set-hostname ansible</span><br><span class="line"># 在host1节点上执行：</span><br><span class="line">hostname set-hostname host1</span><br><span class="line"># 在host2节点上执行：</span><br><span class="line">hostnamectl set-hostname host2</span><br><span class="line"># 在ansible节点上安装Ansible：</span><br><span class="line">yum install /path/to/ansible.rpm</span><br><span class="line">rpm -ivh /path/to/ansible.rpm</span><br></pre></td></tr></table></figure>
+
+
+
+<p>（2）    配置主机清单文件，创建 mysql 主机组，mysql 主机组内添加 host1 和 host2 主机；创建 mysql1 主机组，mysql1 组内添加 host1 主机；创建 mysql2 主机组，mysql2 组内添加 host2 主机，并配置免密登录。 </p>
+<p>将 ansible all -m ping 命令的返回结果提交到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">ansible-galaxy 可以用来生成ansible-playbook所需的文件夹</span><br><span class="line"># 在ansible节点上</span><br><span class="line">vi /etc/ansible/hosts</span><br><span class="line">```</span><br><span class="line">[mysql]</span><br><span class="line">host1</span><br><span class="line">host2</span><br><span class="line"></span><br><span class="line">[mysql1]</span><br><span class="line">&lt;host1&gt; host1</span><br><span class="line"></span><br><span class="line">[mysql2]</span><br><span class="line">&lt;host2&gt; host2</span><br><span class="line">```</span><br><span class="line"># 运行ansible命令进行主机连接测试：</span><br><span class="line">ansible all -m ping</span><br></pre></td></tr></table></figure>
+
+
+
+<p>（3）mysql 主机组内所有主机安装 mariadb 数据库，启动数据库并设置为开机自启动。</p>
+<p>在 host1 节点将 systemctl status mariadb 命令的返回结果提交到答题框。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"># 安装MariaDB并启动：</span><br><span class="line">vi install_mariadb.yaml</span><br><span class="line">```</span><br><span class="line">---</span><br><span class="line">- name: Install and start MariaDB</span><br><span class="line">  hosts: mysql</span><br><span class="line">  remote_user: root</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Install MariaDB</span><br><span class="line">      yum:</span><br><span class="line">        name: </span><br><span class="line">          - mariadb</span><br><span class="line">          - mariadb-server</span><br><span class="line">          - expect</span><br><span class="line">        state: present</span><br><span class="line"></span><br><span class="line">    - name: Start and enable MariaDB</span><br><span class="line">      service:</span><br><span class="line">        name: mariadb</span><br><span class="line">        state: started</span><br><span class="line">        enabled: yes</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"># 运行Playbook来执行安装和启动操作：</span><br><span class="line">ansible-playbook install_mariadb.yml</span><br><span class="line"># 检查MariaDB状态:</span><br><span class="line">systemctl status mariadb</span><br></pre></td></tr></table></figure>
+
+
+
+<p>（4）    编写一名称为 mariadb.sh 的 shell 脚本，该脚本具有完成 mariadb 数据库的初始化功能(要求数据库用户名为 root,密码为 123456)，通过 ansible 对应模块执行 mariadb.sh 完成对 mysql 主机组下的所有节点进行数据库初始化。 </p>
+<p>在 node1 节点，将 mysql -uroot -p123456 命令的返回结果提交到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">vi init_mariadb.sh</span><br><span class="line">```</span><br><span class="line">#!/bin/bash</span><br><span class="line">mysql_secure_installation &lt;&lt;EOF</span><br><span class="line"></span><br><span class="line">y</span><br><span class="line">123456</span><br><span class="line">123456</span><br><span class="line">y</span><br><span class="line">n</span><br><span class="line">y</span><br><span class="line">y</span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line">vi init_mariadb.yaml</span><br><span class="line">```</span><br><span class="line">---</span><br><span class="line">- name: Initialize MariaDB</span><br><span class="line">  hosts: mysql</span><br><span class="line">  remote_user: root</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Copy mariadb.sh script</span><br><span class="line">      copy:</span><br><span class="line">        src: /root/mariadb.sh</span><br><span class="line">        dest: /root/mariadb.sh</span><br><span class="line">        mode: 0755</span><br><span class="line"></span><br><span class="line">    - name: Execute mariadb.sh script</span><br><span class="line">      shell: /root/mariadb.sh</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"># 运行Playbook来执行脚本在mysql主机组内的所有节点上初始化数据库：</span><br><span class="line">ansible-playbook init_mariadb.yml</span><br><span class="line"># 连接到MariaDB数据库：</span><br><span class="line">mysql -uroot -p123456</span><br></pre></td></tr></table></figure>
+
+
+
+<p>（5）    创建主机变量，所有主机组中 host1 节点创建变量 id&#x3D;20,hots2 节点创建变量 id&#x3D;30。 </p>
+<p>将 cat &#x2F;etc&#x2F;ansible&#x2F;hosts | grep id 命令的返回结果提交到答题框。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 编辑主机变量：</span><br><span class="line">vi /etc/ansible/hosts</span><br><span class="line">[mysql]</span><br><span class="line">host1 id=20</span><br><span class="line">host2 id=30</span><br><span class="line"></span><br><span class="line">[mysql1]</span><br><span class="line">host1 id=20</span><br><span class="line"></span><br><span class="line">[mysql2]</span><br><span class="line">host2 id=30</span><br><span class="line"># 检查主机变量设置：</span><br><span class="line">cat /etc/ansible/hosts | grep id</span><br></pre></td></tr></table></figure>
+
+
+
+<p>（6）    根据 mysql 配置文件创建 mysql 的 Janja2 模板文件命名为 my.cnf.j2,编写 mariadb.yaml 文件实现主从数据库的配置和权限设置。 </p>
+<p>在 host2 节点进入数据库将 show slave status \G 命令的返回结果提交到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"># 创建一个名为my.cnf.j2的文件</span><br><span class="line">vi my.cnf.j2</span><br><span class="line">```</span><br><span class="line">[mysqld]</span><br><span class="line">server_id = &#123;&#123; id &#125;&#125;</span><br><span class="line">log_bin = mysql-bin</span><br><span class="line">```</span><br><span class="line"># 编写mariadb.yaml配置文件：</span><br><span class="line">vi mariadb.yaml</span><br><span class="line">```</span><br><span class="line">- name: Configure MySQL</span><br><span class="line">  hosts: mysql</span><br><span class="line">  remote_user: root</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Apply my.cnf template</span><br><span class="line">      template:</span><br><span class="line">        src: /etc/mysql/my.cnf.j2</span><br><span class="line">        dest: /etc/my.cnf</span><br><span class="line"></span><br><span class="line">    - name: Restart MySQL service</span><br><span class="line">      service:</span><br><span class="line">        name: mariadb</span><br><span class="line">        state: restarted</span><br><span class="line"></span><br><span class="line">    - name: Grant master server privileges</span><br><span class="line">      shell: mysql -uroot -p123456 -e &quot;grant all privileges on *.* to &#x27;root&#x27;@&#x27;%&#x27; identified by &#x27;123456&#x27;;&quot;</span><br><span class="line">      when: ansible_fqdn == &quot;host1&quot;</span><br><span class="line">    - name: Set up master replication</span><br><span class="line">      shell: mysql -uroot -p123456 -e &quot;grant replication slave on *.* to &#x27;root&#x27;@&#x27;%&#x27; identified by &#x27;123456&#x27;;&quot;</span><br><span class="line">      when: ansible_fqdn == &quot;host1&quot;</span><br><span class="line">    - name: Set up slave replication</span><br><span class="line">      shell: mysql -uroot -p123456 -e &quot;change master to master_host=&#x27;192.168.79.137&#x27;,master_user=&#x27;root&#x27;,master_password=&#x27;123456&#x27;;&quot;</span><br><span class="line">      when: ansible_fqdn == &quot;host2&quot;</span><br><span class="line">    - name: start slave</span><br><span class="line">      shell: mysql -uroot -p&#x27;123456&#x27; -e &quot;start slave;&quot;</span><br><span class="line">      when: ansible_fqdn == &quot;host2&quot;</span><br><span class="line">```</span><br><span class="line"># 运行配置Playbook</span><br><span class="line">ansible-playbook mariadb.yaml</span><br><span class="line"># 连接到数据库并查看从数据库状态：</span><br><span class="line">mysql -uroot -p123456 -e &quot;show slave status \G&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.Mycat 读写分离部署 </p>
+<p>(1)在 ansible 节点，安装 Java 的运行环境。 将 java –version 命令的返回结果提交到答题框。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装java的运行环境</span><br><span class="line">yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel</span><br><span class="line"># 检查Java安装结果：</span><br><span class="line">java -version</span><br></pre></td></tr></table></figure>
+
+
+
+<p>(2)   在主机清单创建 ansible 主机组并添加 ansible 节点。把 Mycat-server-1.6-RELEASE-linux.tar.gz 解压到&#x2F;usr&#x2F;local 目录下，并完成相关配置。将 cat &#x2F;etc&#x2F;profile | grep mycat 命令的返回结果提交到到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"># 编辑主机清单</span><br><span class="line">vi /etc/ansible/hosts</span><br><span class="line">```</span><br><span class="line">[ansible]</span><br><span class="line">&lt;ansible ip&gt; ansible</span><br><span class="line">```</span><br><span class="line"># 把 Mycat-server-1.6-RELEASE-linux.tar.gz 解压到/usr/local 目录下</span><br><span class="line">tar -zxvf Mycat-server-1.6-RELEASE-linux.tar.gz -C /usr/local</span><br><span class="line"># 进入Mycat目录</span><br><span class="line">cd /usr/local/mcat</span><br><span class="line">chown -R root:root /usr/local/mycat</span><br><span class="line">chown -R 777 /usr/local/mycat</span><br><span class="line">vim /etc/profile</span><br><span class="line">```</span><br><span class="line">export MYCAT_HOME=/usr/local/mycat/</span><br><span class="line">export PATH=$PATH:$MYCAT_HOME/bin </span><br><span class="line">```</span><br><span class="line"># 更新环境变量：</span><br><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<p>(3)   编辑 mycat 服务读写分离的 schema.xml 配置文件，配置数据库 host1 为写节点，host2 为读节点。编辑 mycat 服务的 sever.xml 配置文件，配置 mycat 的逻辑库以及 root 用户的密码为 123456。通过 mycat 启动脚本文件启动 mycat 并验证 mycat 监听端口号是否被监听。将 netstat –ntpl 命令的返回结果提交到答题框。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">vi conf/schema.xml </span><br><span class="line">```</span><br><span class="line">编辑 schema.xml 配置文件：</span><br><span class="line"></span><br><span class="line">找到 &lt;schema&gt; 标签，为你的逻辑库配置添加一个 &lt;table&gt; 标签。示例：</span><br><span class="line">xml</span><br><span class="line">&lt;schema name=&quot;your_logic_db&quot;&gt;</span><br><span class="line">  &lt;table name=&quot;your_table&quot; dataNode=&quot;dn1&quot;&gt;&lt;/table&gt;</span><br><span class="line">&lt;/schema&gt;</span><br><span class="line">找到 &lt;dataNode&gt; 标签，为写节点 host1 和读节点 host2 分别添加配置。示例：</span><br><span class="line">xml</span><br><span class="line">&lt;dataNode name=&quot;dn1&quot; dataHost=&quot;host_group&quot;&gt;</span><br><span class="line">  &lt;writeHost host=&quot;host1&quot; url=&quot;jdbc:mysql://host1:3306/your_db&quot; user=&quot;root&quot; password=&quot;123456&quot; /&gt;</span><br><span class="line">  &lt;readHost host=&quot;host2&quot; url=&quot;jdbc:mysql://host2:3306/your_db&quot; user=&quot;root&quot; password=&quot;123456&quot; /&gt;</span><br><span class="line">&lt;/dataNode&gt;</span><br><span class="line">编辑 server.xml 配置文件：</span><br><span class="line"></span><br><span class="line">找到 &lt;user&gt; 标签，为 root 用户设置密码。示例：</span><br><span class="line">xml</span><br><span class="line">&lt;user name=&quot;root&quot;&gt;</span><br><span class="line">  &lt;property name=&quot;password&quot;&gt;123456&lt;/property&gt;</span><br><span class="line">  &lt;property name=&quot;schemas&quot;&gt;123456&lt;/property&gt;</span><br><span class="line">&lt;/user&gt;</span><br><span class="line">找到 &lt;system&gt; 标签，如果没有 &lt;useStatementPool&gt; 标签，则添加它。示例：</span><br><span class="line">xml</span><br><span class="line">&lt;system&gt;</span><br><span class="line">  &lt;useStatementPool&gt;1&lt;/useStatementPool&gt;</span><br><span class="line">&lt;/system&gt;</span><br><span class="line">使用 Mycat 启动脚本启动 Mycat。你可以执行以下命令（假设在 /usr/local/mycat 目录中）：</span><br><span class="line"></span><br><span class="line">mycat start</span><br><span class="line">使用以下命令验证 Mycat 是否成功启动并监听所需的端口号：</span><br><span class="line"></span><br><span class="line">netstat -ntpl</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>Ansible 自动化运维工具部署 zookeeper 集群</li>
+</ol>
+<p>zookeeper 是一个分布式服务框架，是 Apache Hadoop 的一个子项目，主要是用来解决分布式应用中经常遇到的一些数据管理问题，如：统一命名服务、状态同步服务、集群管理、分布式应用配置项的管理等。 gpmall 商城系统中用到了 kafka 消息队列，kafka 集群的搭建依赖 zookeeper 集群来进行元数据的管理。</p>
+<p>（1）    编写主机清单文件，创建 zookeeper 主机组，zookeeper 主机组内添加 ansible、host1 和 host2 主机，分别创建主机变量 zk_id&#x3D;私有 IP 最后一个数字。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/ansible/hosts</span><br><span class="line">```</span><br><span class="line">[zookeeper]</span><br><span class="line">ansible zk_id=1</span><br><span class="line">host1 zk_id=2</span><br><span class="line">host2 zk_id=3</span><br><span class="line">```</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>将 ansible all -a “id”命令的返回结果提交到答题框。</p>
+<p>（2）    在 ansible 节点，使用提供的 zookeeper-3.4.14.tar.gz 软件包，编写 zookeeper.yaml 文件,实现 zookeeper 集群搭建，创建任务清单实现 zookeeper 安装包批量解压、通过 Janja2 模板文件配置 zookeeper、创建 zooke eper 的 myid 文件和批量启动 zookeeper 功能。在三个节点相应的目录使用.&#x2F;zkServer.sh status 命令查看三个 Zookeeper 节点的状态。将 jps 命令的返回结果提交到答题框。 </p>
+<p>vi zookeeper.yaml</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">- name: Deploy ZooKeeper Cluster</span><br><span class="line">  hosts: zookeeper</span><br><span class="line">  become: yes</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Copy ZooKeeper installation files</span><br><span class="line">      copy:</span><br><span class="line">        src: /root/zookeeper-3.4.14.tar.gz</span><br><span class="line">        dest: /root</span><br><span class="line"></span><br><span class="line">    - name: Extract ZooKeeper</span><br><span class="line">      unarchive:</span><br><span class="line">        src: /root/zookeeper-3.4.14.tar.gz</span><br><span class="line">        dest: /opt</span><br><span class="line"></span><br><span class="line">    - name: Configure ZooKeeper</span><br><span class="line">      template:</span><br><span class="line">        src: zoo.cfg.j2</span><br><span class="line">        dest: /opt/zookeeper-3.4.14/conf/zoo.cfg</span><br><span class="line">    - name: Start ZooKeeper</span><br><span class="line">       shell: /opt/zookeeper-3.4.14/bin/zkServer.sh start</span><br><span class="line">    - name: Create myid file</span><br><span class="line"></span><br><span class="line">      shell: echo &quot;&#123;&#123; zk_id &#125;&#125;&quot; &gt; &quot;/opt/zookeeper-3.4.14/data/myid&quot;</span><br><span class="line">    - name: Restart ZooKeeper</span><br><span class="line">      shell: /opt/zookeeper-3.4.14/bin/zkServer.sh restart</span><br><span class="line">创建Jinja2模板</span><br><span class="line">vi zoo.cfg.j2</span><br><span class="line">```</span><br><span class="line">tickTime=2000</span><br><span class="line">dataDir=/opt/zookeeper-3.4.14/data</span><br><span class="line">clientPort=2181</span><br><span class="line"></span><br><span class="line">server.1=192.168.79.136:2888:3888</span><br><span class="line">server.2=192.168.79.137:2888:3888</span><br><span class="line">server.3=192.168.79.135:2888:3888</span><br><span class="line">```</span><br><span class="line"># 运行Playbook：</span><br><span class="line">ansible-playbook zookeeper.yaml</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>Ansible 自动化运维工具部署 kafka 集群</li>
+</ol>
+<p>Apache Kafka 是分布式发布-订阅消息系统，是一种快速、可扩展的、设计内在就是分布式的，分区的和可复制的提交日志服务。gpmall 商城系统使用了 kafka 消息队列框架来缓存消息。在 ansible 节点，使用提供的 kafka_2.11-1.1.1.tgz 软件包，编写 ansible-playbook 文件实现 kafka 集群搭建，创建任务清单实现 kaf ka 安装包批量解压、通过 Janja2 模板文件批量配置 kafka 和批量启动 kafka 功能。将 jps –ml 命令的返回结果提交到答题框。 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">vi kafka.yaml</span><br><span class="line">```</span><br><span class="line">---</span><br><span class="line">- name: Deploy and Start Kafka Cluster</span><br><span class="line">  hosts: kafka</span><br><span class="line">  become: yes</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Copy Kafka installation files</span><br><span class="line">      copy:</span><br><span class="line">        src: /root/kafka_2.11-1.1.1.tgz</span><br><span class="line">        dest: /opt</span><br><span class="line"></span><br><span class="line">    - name: Extract Kafka</span><br><span class="line">      unarchive:</span><br><span class="line">        src: /opt/kafka_2.11-1.1.1.tgz</span><br><span class="line">        dest: /opt/kafka_2.11-1.1.1</span><br><span class="line"></span><br><span class="line">    - name: Configure Kafka</span><br><span class="line">      template:</span><br><span class="line">        src: server.properties.j2</span><br><span class="line">        dest: /opt/kafka_2.11-1.1.1/config/server.properties</span><br><span class="line"></span><br><span class="line">    - name: Start Kafka service</span><br><span class="line">      shell: /opt/kafka_2.11-1.1.1/bin/kafka-server-start.sh -daemon /opt/kafka_2.11-1.1.1/config/server.properties</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"># 创建Jinja2模板（例如server.properties.j2）：</span><br><span class="line">vi server.properties.j2</span><br><span class="line">```</span><br><span class="line">broker.id=&#123;&#123; zk_id &#125;&#125;</span><br><span class="line">listeners=PLAINTEXT://&#123;&#123; ansible_fqdn &#125;&#125;:9092</span><br><span class="line">advertised.listeners=PLAINTEXT://&#123;&#123; ansible_fqdn &#125;&#125;:9092</span><br><span class="line">log.dirs=/opt/kafka_2.11-1.1.1/data</span><br><span class="line">zookeeper.connect=192.168.79.136:2181,192.168.79.137:2181,192.168.79.135:2181</span><br><span class="line">```</span><br><span class="line"># 运行Playbook：</span><br><span class="line">ansible-playbook kafka.yaml</span><br><span class="line"># 使用以下命令查看Kafka节点的状态：</span><br><span class="line">ansible-playbook kafka.yaml --tags &quot;Check Kafka Cluster Status&quot;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>**任务2 应用商城系统部署</p>
+<p>1.在 ansible 节点，使用提供的 gpmall-cluster 软件包，完成集群应用系统部署。部署完成后，进行登录，最后使用 curl 命令去获取商城首页的返回信息， </p>
+<p>将 curl -l <a target="_blank" rel="noopener" href="http://eip/">http://EIP</a><a target="_blank" rel="noopener" href="http://eip/">:80</a><a target="_blank" rel="noopener" href="http://eip/">命</a>令的返回结果提交到答题框。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">vi gpmall.yaml</span><br><span class="line">```</span><br><span class="line">---</span><br><span class="line">- name: Deploy gpmall Cluster</span><br><span class="line">  hosts: ansible  # Use the appropriate host group or hostname</span><br><span class="line">  become: yes</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Copy gpmall-cluster software package</span><br><span class="line">      copy:</span><br><span class="line">        src: /opt/gpmall-cluster</span><br><span class="line">        dest: /tmp</span><br><span class="line"></span><br><span class="line">    - name: Extract gpmall-cluster</span><br><span class="line">      unarchive:</span><br><span class="line">        src: /tmp/gpmall-cluster</span><br><span class="line">        dest: /opt</span><br><span class="line">        creates: /opt/gpmall-cluster</span><br><span class="line"></span><br><span class="line">    - name: Start gpmall-cluster services</span><br><span class="line">      shell: /opt/gpmall-cluster/start.sh</span><br><span class="line"></span><br><span class="line">- name: Get gpmall Homepage</span><br><span class="line">  hosts: ansible  # Use the appropriate host group or hostname</span><br><span class="line">  tasks:</span><br><span class="line">    - name: Get gpmall homepage</span><br><span class="line">      shell: curl -s http://EIP[:80]</span><br><span class="line">      register: homepage_response</span><br><span class="line"></span><br><span class="line">    - debug:</span><br><span class="line">        var: homepage_response.stdout</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line"># 运行Playbook：</span><br><span class="line">ansible-playbook gpmall.yaml</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>任务3 Prometheus监控Mariadb主从数据库</p>
+<p>1.Prometheus 及 Grafana 搭建</p>
+<p>根据 grafana-enterprise-8.3.6.linux-amd64.tar.gz、prometheus-2.37.0.linux-amd64.tar.gz、node_exporter-1.3.</p>
+<p>1.linux-amd64.tar.gz 资源包，安装 prometheus-2.37.0、node_exporter 服务并启动，安装 grafana 服务并测试浏览器登陆。</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># 安装和配置Prometheus：</span><br><span class="line">tar -zxvf prometheus-2.37.0.linux-amd64.tar.gz</span><br><span class="line">mv prometheus-2.37.0.linux-amd64 prometheus</span><br><span class="line">cd prometheus</span><br><span class="line">./prometheus --config.file=prometheus.yml</span><br><span class="line"># 这将在默认端口9090上启动Prometheus。</span><br><span class="line"># 安装和启动Node Exporter：</span><br><span class="line">tar -zxvf node_exporter-1.3.1.linux-amd64.tar.gz</span><br><span class="line">cd node_exporter-1.3.1.linux-amd64</span><br><span class="line">./node_exporter</span><br><span class="line"># Node Exporter将在默认端口9100上启动。</span><br><span class="line"># 安装和配置Grafana：</span><br><span class="line">tar -xzvf grafana-enterprise-8.3.6.linux-amd64.tar.gz</span><br><span class="line">mv grafana-8.3.6 grafana</span><br><span class="line">cd grafana/bin</span><br><span class="line">./grafana-server</span><br><span class="line"># Grafana将在3000端口上启动。您可以在浏览器中访问http://服务器IP:3000来登录Grafana，默认用户名和密码都是admin。</span><br><span class="line"># 配置数据源和Dashboard：</span><br><span class="line">  登录Grafana后，点击左侧的“齿轮”图标，选择“Data Sources”。</span><br><span class="line">  点击“Add data source”。</span><br><span class="line">  选择“Prometheus”作为数据源类型，配置URL为http://localhost:9090（如果Prometheus在其他服务器上，请   替换为相应的URL）。</span><br><span class="line">  点击“Save &amp; Test”以保存和测试数据源配置。</span><br><span class="line"># 导入Mariadb监控Dashboard：</span><br><span class="line">  在Grafana中，点击左侧的“+”图标，选择“Import”。</span><br><span class="line">  使用Dashboard ID（如https://grafana.com/grafana/dashboards/7362）或者上传JSON文件导入Mariadb   监控Dashboard。</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+
+
+<p>2.Prometheus 配置自定义监控项、mysqld_exporter 安装及配置</p>
+<p>根据 mysqld_exporter-0.12.1.linux-amd64.tar.gz 安装 mysqld_exporter，并创建&#x2F;修改 mysqld_exporter-0.12.</p>
+<p>1.linux-amd64&#x2F;my.cnf 文件添加被监控数据库用户名密码，修改 prometheus.yml 文件，添加两个任务：mysql -ansible-slave、nodes，抓取间隔都设置 5s，分别监控主从节点的 mysqld_exporter、node_exporter 端口，重启 prometheus 并刷新 prometheus 页面。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"># 安装和配置 mysqld_exporter：</span><br><span class="line">tar -xzvf mysqld_exporter-0.12.1.linux-amd64.tar.gz</span><br><span class="line">cd mysqld_exporter-0.12.1.linux-amd64</span><br><span class="line"># 编辑my.cnf文件，添加被监控数据库用户名密码</span><br><span class="line">cp my.cnf.example .my.cnf</span><br><span class="line">在 my.cnf 文件中，你需要添加或修改以下两行以包含你的 MySQL 数据库的用户名和密码：</span><br><span class="line">[client]</span><br><span class="line">host=127.0.0.1</span><br><span class="line">port=3306</span><br><span class="line">user=root</span><br><span class="line">password=123456</span><br><span class="line"># 启动 mysqld_exporter</span><br><span class="line">./mysqld_exporter</span><br><span class="line"># 修改 Prometheus 配置：添加以下内容以监控mysqld_exporter和node_exporter：</span><br><span class="line">vi prometheus.yml</span><br><span class="line">```</span><br><span class="line">global:</span><br><span class="line">  scrape_interval: 5s</span><br><span class="line"></span><br><span class="line">scrape_configs:</span><br><span class="line">  - job_name: &#x27;mysql-ansible-slave&#x27;</span><br><span class="line">    static_configs:</span><br><span class="line">      - targets: [&#x27;host1:9104&#x27;, &#x27;host2:9104&#x27;] # 替换为实际的主从节点IP</span><br><span class="line"></span><br><span class="line">  - job_name: &#x27;nodes&#x27;</span><br><span class="line">    static_configs:</span><br><span class="line">      - targets: [&#x27;host1:9100&#x27;, &#x27;host2:9100&#x27;] # 替换为实际的主从节点IP</span><br><span class="line"></span><br><span class="line">```</span><br><span class="line">./prometheus --config.file=prometheus.yml</span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/13/2023%E9%87%91%E7%A0%96%E6%A0%B7%E9%A2%98/" data-id="clz8f3fyc0001egvs6nxo3c2t" data-title="2023金砖样题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%A0%B7%E9%A2%98/" rel="tag">样题</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/14/2023%E9%87%91%E7%A0%96%E9%84%82%E5%90%89%E6%B9%98%E9%BB%94%E6%A0%B7%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2023金砖鄂吉湘黔样题
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/" rel="tag">CSS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html5/" rel="tag">html5</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%B7%E9%A2%98/" rel="tag">样题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="tag">正则表达式</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/CSS/" style="font-size: 10px;">CSS</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/html5/" style="font-size: 10px;">html5</a> <a href="/tags/%E6%A0%B7%E9%A2%98/" style="font-size: 20px;">样题</a> <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" style="font-size: 20px;">正则表达式</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/07/">July 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">October 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/07/30/%E6%A0%B7%E9%A2%98%E6%80%BB%E7%BB%93/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/30/openstack%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/30/Mariadb%60Mysql%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6my.cnf%E8%A7%A3%E7%AD%94/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/30/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2024/07/23/python%E4%BA%8C%E7%BA%A7/">python二级</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
